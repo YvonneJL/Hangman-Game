@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+
+--color-dark-blue: #4354a2;
+--color-mid-blue: #627bbd;
+--color-burnt-red: #a0352b;
+--color-salmonish: #e46548;
+--color-baby-pink: #fcb4a8;
+--color-ice-blue: #bbc3d6;
+--color-grey-blue: #b3b8cf;
+--color-white: #f7f8fc;
+
+
+--color-stairs-yellow: #d8ac2f;
+--color-stairs-light-yellow: #dbc360;
+--color-stairs-olive: #5e4d17;
+--color-stairs-sage: #8b9c46;
+--color-stairs-dark-blue: #3f4c6c;
+--color-stairs-light: #ededde;
+
+
+--color-rb-red: #961312;
+--color-rb-iceblue: #d0e6ed;
+--color-rb-grey-beige: #beaa8b;
+--color-rb-beige: #f0dcb7;
+--color-rb-forest: #3c502d;
+--color-rb-mint: #68a086;
+--color-rb-brown: #6a341a;
+
+
+--color-glas-red: #bb0520;
+--color-glas-green: #123813; 
+--color-glas-orange: #da3a0a; 
+--color-glas-base: #e6e9f2;
+--color-glas-beige: #d7ab86;
+--color-glas-brown: #984732;
+--color-glas-light-brown: #ecd9cb;
+
+
+--color-block-yellow: #d5bb42;
+--color-block-light-yellow: #ecc564;
+--color-block-olive: #715724;
+--color-block-grey: #c1cace;
+--color-block-dusty-rose: #a06279;
+--color-block-magenta: #651937;
+--color-block-beige: #d5bb96;
+--color-block-sage: #79b76d;
+--color-block-brown: #502f23; 
+}

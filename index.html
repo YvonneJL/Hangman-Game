@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galgenmännchen Projekt</title>
+    <script type="module" src="./src/main.ts"></script>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="bg-dark-blue px-10 py-20">
+    <main>
+        <section>
+            <h1 class="text-6xl font-bold text-center py-3 text-rb-iceblue">Hangman</h1>
+        </section>
+        <section class="grid grid-cols-10 gap-7 m-10" id="button-section">
+        </section>
+        <section id="result-wrap" class="my-16 flex justify-center gap-3">
+        </section>
+        <div class="flex justify-center mb-10">
+            <button class="rounded-xl text-yellow-100 p-3 bg-salmonish" id="hit-me">Hit me Again</button>
+        </div>
+        <section id="wrong-letters" class="flex flex-col gap-3">
+            <div id="counter"></div>
+        </section>
+    </main>
+</body>
+</html>
