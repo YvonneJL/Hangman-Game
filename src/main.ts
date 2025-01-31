@@ -6,14 +6,14 @@ const sectionButtons = document.querySelector("#button-section");
 const sectionResult = document.querySelector<HTMLDivElement>("#result-wrap");
 const buttonHitMe = document.querySelector("#hit-me");
 const wrongLetterSection = document.querySelector<HTMLDivElement>("#wrong-letters");
-const counterDivElement = document.querySelector("#counter");
+const counterPElement = document.querySelector("#counter");
 
 
 //Variable für falsche Klicks initialisieren
 let counterForClicks: number = 11;
 
 
-if (sectionButtons && sectionResult && buttonHitMe && wrongLetterSection && counterDivElement) {
+if (sectionButtons && sectionResult && buttonHitMe && wrongLetterSection && counterPElement) {
 
 
     //Erstellen der Buchstaben-Buttons(dynamisch)
@@ -21,7 +21,8 @@ if (sectionButtons && sectionResult && buttonHitMe && wrongLetterSection && coun
         const allButtons = document.createElement("button");
         sectionButtons.appendChild(allButtons);
         allButtons.textContent = String.fromCharCode(i).toUpperCase();
-        allButtons.className = "rounded-xl text-yellow-100 p-3 bg-salmonish letter-button";
+        allButtons.className = "rounded-xl text-yellow-100 p-2 bg-salmonish letter-button";
+        allButtons.disabled = true;
     };
 
     //Initialisieren der Variablen, die 
@@ -33,10 +34,14 @@ if (sectionButtons && sectionResult && buttonHitMe && wrongLetterSection && coun
     //Button "Hit me Again" Click-Event
     buttonHitMe.addEventListener("click", ()=> {
         //vor dem Generieren eines neuen Wortes, folgendes auf "reset"
+        buttonHitMe.textContent = "Hit me Again";
         sectionResult.innerText = "";
         wrongLetterSection.innerText = "";
         letterElements = [];
         let randomWord = "";
+        counterForClicks = 11;
+        counterPElement.innerHTML = "11";
+        allLetterButtons.forEach((button)=> button.disabled = false)
         //ein randomWord aus dem Array ziehen (zuvor leer initialisiert)
         randomWord = words[Math.floor(Math.random()*words.length)].toUpperCase();
         console.log(randomWord);
@@ -91,7 +96,7 @@ if (sectionButtons && sectionResult && buttonHitMe && wrongLetterSection && coun
                         if (isEveryLetterVisible) {
                             wrongLetterSection.innerText = "";
                             wrongLetterSection.innerText = "You won 🍾";
-                            wrongLetterSection.className = "flex justify-center text-6xl text-green-400 p-10";
+                            wrongLetterSection.className = "flex justify-center text-4xl text-green-400 p-4";
                         };
                 }; 
             };
@@ -99,24 +104,33 @@ if (sectionButtons && sectionResult && buttonHitMe && wrongLetterSection && coun
             // Counter mitlaufen lassen
             const isLetterInWord = wordAsArray.includes(button.innerHTML);
             if (!isLetterInWord) {
-                counterForClicks--
-                for (let i=11; i>= 0; i--){
+                    counterForClicks--
+                    console.log(counterForClicks);
+                    counterPElement.innerHTML = counterForClicks.toString();
+
                     const wrongLetterPElement = document.createElement("p");
-                    wrongLetterPElement.textContent = button.innerHTML[i];
-                    wrongLetterPElement.className = "text-rb-iceblue text-3xl"
+
+                    wrongLetterSection.className = "flex gap-3 justify-center"
+                    wrongLetterPElement.textContent = button.innerHTML;
+                    wrongLetterPElement.className = "text-rb-iceblue text-3xl";
+
                     wrongLetterSection.appendChild(wrongLetterPElement);
-                    wrongLetterSection.className = "flex gap-3"
-                };
-                //! Hier irgendwo den Counter sichtbar in DOM
-                console.log(counterForClicks);
+
                 // Nach 11 falschen Klicks button-Elemente auf disabled stellen
                 if (counterForClicks <= 0) {
                     allLetterButtons.forEach((button)=> button.disabled = true)
                     wrongLetterSection.innerText = "";
                     wrongLetterSection.innerText = "Game Over 🤡";
-                    wrongLetterSection.className = "flex justify-center text-6xl text-red-400 p-10";
+                    wrongLetterSection.className = "flex justify-center text-4xl text-red-400 p-4";
                 }
             }
         })
     })
 };  
+
+
+//! Countdown hinzufügen
+//! Animation--> You won/Game Over
+
+//! readme
+
