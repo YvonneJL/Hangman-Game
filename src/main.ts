@@ -7,10 +7,15 @@ const sectionResult = document.querySelector<HTMLDivElement>("#result-wrap");
 const buttonHitMe = document.querySelector("#hit-me");
 const wrongLetterSection = document.querySelector<HTMLDivElement>("#wrong-letters");
 const counterPElement = document.querySelector("#counter");
+const countdownElement = document.querySelector("#countdown");
 
 
 //Variable für falsche Klicks initialisieren
 let counterForClicks: number = 11;
+
+//Variablen für Interval/Countdown
+let totalSeconds = Math.floor(3*60);
+let intervalID: number;
 
 
 if (sectionButtons && sectionResult && buttonHitMe && wrongLetterSection && counterPElement) {
@@ -31,6 +36,7 @@ if (sectionButtons && sectionResult && buttonHitMe && wrongLetterSection && coun
     let wordAsArray: string[] = []
     let letterElements: HTMLParagraphElement[] = [];
 
+
     //Button "Hit me Again" Click-Event
     buttonHitMe.addEventListener("click", ()=> {
         //vor dem Generieren eines neuen Wortes, folgendes auf "reset"
@@ -41,7 +47,12 @@ if (sectionButtons && sectionResult && buttonHitMe && wrongLetterSection && coun
         let randomWord = "";
         counterForClicks = 11;
         counterPElement.innerHTML = "11";
-        allLetterButtons.forEach((button)=> button.disabled = false)
+        allLetterButtons.forEach((button)=> button.disabled = false);
+        let totalSeconds = Math.floor(3 * 60);
+        //falls Intervall läuft, stoppen (fängt neu an, da Zeile oberhalb totalSeconds wieder auf 180 stellt)
+        if (intervalID) {
+            clearInterval(intervalID);
+        }
         //ein randomWord aus dem Array ziehen (zuvor leer initialisiert)
         randomWord = words[Math.floor(Math.random()*words.length)].toUpperCase();
         console.log(randomWord);
@@ -49,7 +60,25 @@ if (sectionButtons && sectionResult && buttonHitMe && wrongLetterSection && coun
         wordAsArray = randomWord.split("");
         //hier render-Funktion aufrufen
         renderSearchedWordToDOM();
-
+        //Countdown Funktion
+        function setCountdown () {
+            if (countdownElement) {
+                //Darstellung der Minuten und Sekunden
+                    //Sekunden mit %
+                    const remainingMinutes = Math.floor(totalSeconds/60);
+                    const remainingSeconds = Math.floor(totalSeconds%60);
+                    //Zähler
+                    totalSeconds--;
+                    countdownElement.textContent = `${remainingMinutes.toString().padStart(2, "0")}:${remainingSeconds.toString().padStart(2, "0")}`;
+                    // Intervall stoppne und anzeigen, dass Spiel vorbei ist, wenn Zähler auf Null
+                    if (totalSeconds < 0 && wrongLetterSection) {
+                        clearInterval(intervalID);
+                        wrongLetterSection.innerText = "Game Over 🤡";
+                    };
+            };
+        };
+        //Intervall starten
+        intervalID = setInterval(setCountdown, 1000);
     });
 
     //! HIER NOCH AUFRÄUMEN?--> also mit innerHTML
@@ -97,6 +126,7 @@ if (sectionButtons && sectionResult && buttonHitMe && wrongLetterSection && coun
                             wrongLetterSection.innerText = "";
                             wrongLetterSection.innerText = "You won 🍾";
                             wrongLetterSection.className = "flex justify-center text-4xl text-green-400 p-4";
+                            clearInterval(intervalID);
                         };
                 }; 
             };
@@ -122,14 +152,14 @@ if (sectionButtons && sectionResult && buttonHitMe && wrongLetterSection && coun
                     wrongLetterSection.innerText = "";
                     wrongLetterSection.innerText = "Game Over 🤡";
                     wrongLetterSection.className = "flex justify-center text-4xl text-red-400 p-4";
-                }
-            }
-        })
-    })
+                };
+            };
+        });
+    });
 };  
 
 
-//! Countdown hinzufügen
+
 //! Animation--> You won/Game Over
 
 //! readme
