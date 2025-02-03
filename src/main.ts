@@ -33,7 +33,7 @@ const countdownElement = document.querySelector("#countdown");
 let counterForClicks: number = 11;
 
 //Variablen für Interval/Countdown
-let totalSeconds = Math.floor(3 * 60);
+
 let intervalID: number;
 
 if (
