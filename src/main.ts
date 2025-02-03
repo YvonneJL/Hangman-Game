@@ -49,7 +49,7 @@ if (
         sectionButtons.appendChild(allButtons);
         allButtons.textContent = String.fromCharCode(i).toUpperCase();
         allButtons.className =
-            "rounded-xl text-yellow-100 p-2 bg-salmonish letter-button";
+            "rounded-xl text-yellow-100 p-2 bg-salmonish letter-button font-[barrio-regular]";
         allButtons.disabled = true;
     }
 
@@ -119,7 +119,7 @@ if (
                 const letterContainer = document.createElement("div");
                 const letter = document.createElement("p");
                 letter.className =
-                    "bg-yellow-100 text-salmonish px-4 py-2 mb-2 text-xl font-bold rounded-lg invisible";
+                    "bg-yellow-100 text-salmonish px-4 py-2 mb-2 text-xl font-bold rounded-lg invisible font-[barrio-regular]";
                 letter.textContent = wordAsArray[i];
                 sectionResult.appendChild(containerAll);
                 containerAll.appendChild(letterContainer);
@@ -173,7 +173,7 @@ if (
 
                 wrongLetterSection.className = "flex gap-3 justify-center";
                 wrongLetterPElement.textContent = button.innerHTML;
-                wrongLetterPElement.className = "text-rb-iceblue text-3xl";
+                wrongLetterPElement.className = "text-rb-iceblue text-3xl font-[barrio-regular]";
 
                 wrongLetterSection.appendChild(wrongLetterPElement);
 
