@@ -108,7 +108,6 @@ if (
         intervalID = setInterval(setCountdown, 1000);
     });
 
-    //! HIER NOCH AUFRÄUMEN?--> also mit innerHTML
     //Funktion-->jeder Buchstaben im Array in die DOM
     function renderSearchedWordToDOM() {
         if (sectionResult) {
@@ -192,4 +191,3 @@ if (
     });
 }
 
-//! readme und aufräumen oben mit innerhtml
