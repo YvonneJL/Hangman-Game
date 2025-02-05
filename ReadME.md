@@ -8,7 +8,7 @@
 # Hangman Game
 
 <div style="display: flex; justify-content: center;">
-  <img src="../public/Macbook-Air-localhost.png"  alt="Project Screenshot Mobile Simulator">
+  <img src="./public/Macbook-Air-localhost.png"  alt="Project Screenshot Mobile Simulator">
 </div>
 <br/>
 
