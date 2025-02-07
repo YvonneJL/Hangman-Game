@@ -11,7 +11,6 @@
 <div style="display: flex; justify-content: center;">
   <img src="./public/Macbook-Air-localhost.png"  alt="Project Screenshot Mobile Simulator">
 </div>
-[Macbook-Air-localhost-hoib2t0pa8hwbt.webm](https://github.com/user-attachments/assets/f936055b-3f49-4f34-9f17-8599276fc731)
 <br/>
 
 Das Projekt „Hangman Game“ wurde im Rahmen des sechsmonatigen Web-Development-Kurses während des „TypeScript“-Moduls entwickelt. Ziel dieses Projekts war es, meine neu erlernten Fähigkeiten in der Programmiersprache TypeScript zu demonstrieren. Das Spiel umfasst einen Zähler, der die verbleibenden Versuche anzeigt, sowie einen Countdown, der dem Nutzer bzw. der Nutzerin die verbleibende Spielzeit anzeigt. Es können beliebig viele Runden gespielt werden, wobei das Spiel auf ein Array mit einer festgelegten Anzahl von Wörtern zugreift, die jeweils zufällig ausgewählt werden und vom Nutzer erraten werden müssen.
