@@ -5,10 +5,12 @@
 <!-- Buttons erst aktiv beim KLicka uf "Hit me"-->
 <!-- Buttons deaktiviert, wenn game over--erst wieder aktiv, wenn hit me-->
 
+
 # Hangman Game
 
 <div style="display: flex; justify-content: center;">
   <img src="./public/Macbook-Air-localhost.png"  alt="Project Screenshot Mobile Simulator">
+  [Macbook-Air-localhost-hoib2t0pa8hwbt.webm](https://github.com/user-attachments/assets/052c5116-1174-4842-aa17-c4f2332bd6f7)
 </div>
 <br/>
 
