@@ -46,7 +46,7 @@ Zusätzlich wird der Nutzerin bzw. dem Nutzer angezeigt, welche Buchstaben, die 
 
 ## Getting Startet
 
-Hier ist eine Anleitung, wie du das "Personalized Nutrition Coaching"-Projekt auf deinem lokalen Rechner einrichtest und ausführst:
+Hier ist eine Anleitung, wie du das "Hangman"-Projekt auf deinem lokalen Rechner einrichtest und ausführst:
 
 ### Voraussetzungen
 
