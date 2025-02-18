@@ -1,5 +1,6 @@
 # Hangman Game
 
+[Sreenvid.webm](https://github.com/user-attachments/assets/ea9643ad-d0eb-4b50-a60a-cc5f37ebbc3b)
 
 
 Das Projekt „Hangman Game“ wurde im Rahmen des sechsmonatigen Web-Development-Kurses während des „TypeScript“-Moduls entwickelt. Ziel dieses Projekts war es, meine neu erlernten Fähigkeiten in der Programmiersprache TypeScript zu demonstrieren. Das Spiel umfasst einen Zähler, der die verbleibenden Versuche anzeigt, sowie einen Countdown, der dem Nutzer bzw. der Nutzerin die verbleibende Spielzeit anzeigt. Es können beliebig viele Runden gespielt werden, wobei das Spiel auf ein Array mit einer festgelegten Anzahl von Wörtern zugreift, die jeweils zufällig ausgewählt werden und vom Nutzer erraten werden müssen.
@@ -27,6 +28,9 @@ Zusätzlich wird der Nutzerin bzw. dem Nutzer angezeigt, welche Buchstaben, die 
 ## Tech Stack
 
 **Styling:**  
+**Markup:**  
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  
+
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)  
 
