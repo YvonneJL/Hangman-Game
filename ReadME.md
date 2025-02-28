@@ -1,6 +1,7 @@
 # Hangman Game
 
-[Sreenvid.webm](https://github.com/user-attachments/assets/ea9643ad-d0eb-4b50-a60a-cc5f37ebbc3b)
+[Macbook-Air-hangman-game-seven-xi.vercel.app-hm0_0u-oyl9d2z.webm](https://github.com/user-attachments/assets/d769ef41-281e-47f1-baa9-9d279bc5e089)
+
 
 
 Das Projekt „Hangman Game“ wurde im Rahmen des sechsmonatigen Web-Development-Kurses während des „TypeScript“-Moduls entwickelt. Ziel dieses Projekts war es, meine neu erlernten Fähigkeiten in der Programmiersprache TypeScript zu demonstrieren. Das Spiel umfasst einen Zähler, der die verbleibenden Versuche anzeigt, sowie einen Countdown, der dem Nutzer bzw. der Nutzerin die verbleibende Spielzeit anzeigt. Es können beliebig viele Runden gespielt werden, wobei das Spiel auf ein Array mit einer festgelegten Anzahl von Wörtern zugreift, die jeweils zufällig ausgewählt werden und vom Nutzer erraten werden müssen.
@@ -30,11 +31,19 @@ Der Zähler oben links wird nach jedem Klick auf den Button „Hit me (Again)“
 Zusätzlich wird der Nutzerin bzw. dem Nutzer angezeigt, welche Buchstaben, die bereits geklickt wurden, nicht im gesuchten Wort enthalten sind, indem diese ebenfalls visualisiert werden.
 
 ## Tech Stack
+<<<<<<< HEAD
 
 **Markup:**  
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  
 
 **Styling:**  
+=======
+ 
+**Markup:**  
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  
+
+**Styling:**<br/>
+>>>>>>> ed7493873afaa35b5a3b663f42042a5d9ca95389
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)  
 
