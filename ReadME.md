@@ -17,6 +17,10 @@ Das Projekt „Hangman Game“ wurde im Rahmen des sechsmonatigen Web-Developmen
 
 ## Über das Projekt
 
+<div style="display: flex; justify-content: space-between; align-items: center; width: 100%">
+    <img style="object-fit: contain" src="./public/Macbook-Air-hangman-game-seven-xi.vercel.app.png">
+</div>
+
 Für die Entwicklung dieses Projekts habe ich Visual Studio Code als Entwicklungsumgebung verwendet und die Website unter Einsatz von HTML sowie Tailwind CSS gestaltet. Die Funktionen zum Anzeigen der Buchstaben, des Zählers und des Countdowns habe ich in TypeScript implementiert.
 
 Das Hauptziel dieses Projekts war es, die bis dahin erlernten Konzepte, insbesondere in TypeScript, praxisnah anzuwenden. Das Ergebnis ist eine Website, die ein spielerisches und gleichzeitig minimalistisches Design aufweist, mit dem die Nutzerin bzw. der Nutzer interagieren kann.
