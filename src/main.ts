@@ -49,7 +49,7 @@ if (
         sectionButtons.appendChild(allButtons);
         allButtons.textContent = String.fromCharCode(i).toUpperCase();
         allButtons.className =
-            "rounded-full md:h-10 md:w-10 h-9 w-9 flex justify-center items-center text-yellow-100 hover:bg-yellow-100 hover:text-salmonish md:p-2 bg-salmonish letter-button font-[barrio-regular]";
+            "rounded-full md:h-10 md:w-10 h-9 w-9 flex justify-center items-center bg-yellow-100 hover:text-yellow-100 hover:bg-salmonish md:p-2 text-salmonish letter-button font-[barrio-regular]";
         allButtons.disabled = true;
     }
 
@@ -118,7 +118,7 @@ if (
                 const letterContainer = document.createElement("div");
                 const letter = document.createElement("p");
                 letter.className =
-                    "flex justify-center items-center bg-yellow-100 text-salmonish md:px-4 md:py-2 md:mb-2 h-9 w-10 text-xl  font-bold rounded-full invisible font-[barrio-regular]";
+                    "flex justify-center items-center text-yellow-100 bg-salmonish md:px-4 md:py-2 md:mb-2 h-9 w-10 text-xl  font-bold rounded-full invisible font-[barrio-regular]";
                 letter.textContent = wordAsArray[i];
                 sectionResult.appendChild(containerAll);
                 containerAll.appendChild(letterContainer);
@@ -155,7 +155,7 @@ if (
                         wrongLetterSection.innerText = "";
                         wrongLetterSection.innerText = "You won 🍾";
                         wrongLetterSection.className =
-                            "flex justify-center md:text-4xl text-2xl text-green-400 md:pt-10 p-4 ease-in duration-800 font-[barrio-regular]";
+                            "flex justify-center md:text-4xl text-2xl text-text md:pt-10 p-4 ease-in duration-800 font-[barrio-regular]";
                         clearInterval(intervalID);
                     }
                 }
@@ -184,7 +184,7 @@ if (
                     wrongLetterSection.innerText = "";
                     wrongLetterSection.innerText = "Game Over 🤡";
                     wrongLetterSection.className =
-                        "ease-in duration-800 flex justify-center md:text-4xl md:pt-10 text-2xl text-red-400 p-4 font-[barrio-regular]";
+                        "ease-in duration-800 flex justify-center md:text-4xl md:pt-10 text-2xl text-text p-4 font-[barrio-regular]";
                 }
             }
         });
