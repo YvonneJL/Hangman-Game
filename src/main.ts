@@ -49,7 +49,7 @@ if (
         sectionButtons.appendChild(allButtons);
         allButtons.textContent = String.fromCharCode(i).toUpperCase();
         allButtons.className =
-            "rounded-xl text-yellow-100 p-2 bg-salmonish letter-button font-[barrio-regular]";
+            "rounded-full md:h-10 md:w-10 h-9 w-9 flex justify-center items-center text-yellow-100 hover:bg-yellow-100 hover:text-salmonish md:p-2 bg-salmonish letter-button font-[barrio-regular]";
         allButtons.disabled = true;
     }
 
@@ -118,7 +118,7 @@ if (
                 const letterContainer = document.createElement("div");
                 const letter = document.createElement("p");
                 letter.className =
-                    "bg-yellow-100 text-salmonish px-4 py-2 mb-2 text-xl font-bold rounded-lg invisible font-[barrio-regular]";
+                    "flex justify-center items-center bg-yellow-100 text-salmonish md:px-4 md:py-2 md:mb-2 h-9 w-10 text-xl  font-bold rounded-full invisible font-[barrio-regular]";
                 letter.textContent = wordAsArray[i];
                 sectionResult.appendChild(containerAll);
                 containerAll.appendChild(letterContainer);
@@ -127,7 +127,7 @@ if (
                 //Linien, um zu sehen wie viele Buchstaben es gibt
                 const underLine = document.createElement("div");
                 containerAll.appendChild(underLine);
-                underLine.className = "bg-black w-full h-1";
+                underLine.className = "bg-text w-5 md:w-full h-0.5 mx-auto";
 
                 //<p>-Elemente in ein Array pushen, um später Klasse "invisible" zu entfernen
                 letterElements.push(letter);
@@ -155,7 +155,7 @@ if (
                         wrongLetterSection.innerText = "";
                         wrongLetterSection.innerText = "You won 🍾";
                         wrongLetterSection.className =
-                            "flex justify-center text-6xl text-green-400 p-4 ease-in duration-400 font-[barrio-regular]";
+                            "flex justify-center md:text-4xl text-2xl text-green-400 md:pt-10 p-4 ease-in duration-800 font-[barrio-regular]";
                         clearInterval(intervalID);
                     }
                 }
@@ -172,7 +172,7 @@ if (
 
                 wrongLetterSection.className = "flex gap-3 justify-center";
                 wrongLetterPElement.textContent = button.innerHTML;
-                wrongLetterPElement.className = "text-rb-iceblue text-3xl font-[barrio-regular]";
+                wrongLetterPElement.className = "text-text md:text-3xl text-xl font-[barrio-regular]";
 
                 wrongLetterSection.appendChild(wrongLetterPElement);
 
@@ -184,7 +184,7 @@ if (
                     wrongLetterSection.innerText = "";
                     wrongLetterSection.innerText = "Game Over 🤡";
                     wrongLetterSection.className =
-                        "ease-in duration-800 flex justify-center text-4xl text-red-400 p-4 font-[barrio-regular]";
+                        "ease-in duration-800 flex justify-center md:text-4xl md:pt-10 text-2xl text-red-400 p-4 font-[barrio-regular]";
                 }
             }
         });

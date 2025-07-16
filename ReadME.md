@@ -31,19 +31,11 @@ Der Zähler oben links wird nach jedem Klick auf den Button „Hit me (Again)“
 Zusätzlich wird der Nutzerin bzw. dem Nutzer angezeigt, welche Buchstaben, die bereits geklickt wurden, nicht im gesuchten Wort enthalten sind, indem diese ebenfalls visualisiert werden.
 
 ## Tech Stack
-<<<<<<< HEAD
-
-**Markup:**  
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  
-
-**Styling:**  
-=======
  
 **Markup:**  
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  
 
 **Styling:**<br/>
->>>>>>> ed7493873afaa35b5a3b663f42042a5d9ca95389
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)  
 

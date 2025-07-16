@@ -8,36 +8,41 @@
         <link rel="stylesheet" href="./src/style.css" />
     </head>
     <body class="bg-dark-blue">
-        <main class="px-8 py-16">
-            <section class="flex justify-between items-center">
-                <div
-                    class="bg-yellow-100 h-16 w-16 rounded-full flex justify-center items-center"
+        <main class="md:px-8 md:py-16 py-5">
+            <section class="flex justify-between items-center px-10">
+                <div class="flex flex-row items-center gap-5">
+                    <div
+                    class="bg-yellow-100 md:h-16 md:w-16 h-10 w-10 rounded-full flex justify-center items-center"
                 >
-                    <p id="counter" class="text-burnt-red text-3xl"></p>
+                    <p id="counter" class="text-text md:text-3xl text-xl font-[barrio-regular]"></p>
                 </div>
+                     <div id="countdown" class="text-salmonish md:text-3xl text-xl font-[barrio-regular]"></div>
+                </div>
+                
                 <h1
-                    class="text-6xl font-bold text-center py-2 text-rb-iceblue font-[barrio-regular]"
+                    class="md:text-6xl text-4xl font-bold text-center md:py-2 text-text font-[barrio-regular]"
                 >
                     Hangman
                 </h1>
-                <div id="countdown" class="text-yellow-100 text-3xl"></div>
-            </section>
-            <section
-                class="grid grid-cols-10 gap-7 m-5 mt-20 w-[80%] mx-auto"
-                id="button-section"
-            ></section>
-            <section
-                id="result-wrap"
-                class="my-10 flex justify-center gap-3"
-            ></section>
-            <div class="flex justify-center mb-5">
-                <button
-                    class="rounded-xl text-yellow-100 p-3 bg-salmonish font-[barrio-regular]"
+                <div class="flex flex-row items-center gap-2">
+                    <div id="countdown" class="text-salmonish md:text-3xl text-xl font-[barrio-regular]"></div>
+                                    <button
+                    class="rounded-xl text-text p-3 bg-yellow-100 font-[barrio-regular] hover:bg-salmonish"
                     id="hit-me"
                 >
                     Hit me
                 </button>
-            </div>
+                </div>
+            </section>
+            <section
+                class="grid grid-cols-13 md:gap-7 gap-3 md:mt-20 mt-7 w-[80%] mx-auto"
+                id="button-section"
+            ></section>
+            <section
+                id="result-wrap"
+                class="md:my-10 my-5 flex justify-center gap-3"
+            ></section>
+        
             <section id="wrong-letters" class="flex flex-col gap-3"></section>
         </main>
     </body>
