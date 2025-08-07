@@ -1,7 +1,7 @@
 # Hangman Game
 
+[iPhone-13-PRO-hangman-game-seven-xi.vercel.app-5x_k3dnhewk_ug.webm](https://github.com/user-attachments/assets/8554b3c9-f886-4946-ae0a-eb8405c75b39)
 
-[iPhone-13-PRO-localhost-o_gd1t1j_oa592.webm](https://github.com/user-attachments/assets/cda3257c-ce8e-4ce7-a796-2e535b24eaae)
 
 
 Das Projekt „Hangman Game“ wurde im Rahmen des sechsmonatigen Web-Development-Kurses während des „TypeScript“-Moduls entwickelt. Ziel dieses Projekts war es, meine neu erlernten Fähigkeiten in der Programmiersprache TypeScript zu demonstrieren. Das Spiel umfasst einen Zähler, der die verbleibenden Versuche anzeigt, sowie einen Countdown, der dem Nutzer bzw. der Nutzerin die verbleibende Spielzeit anzeigt. Es können beliebig viele Runden gespielt werden, wobei das Spiel auf ein Array mit einer festgelegten Anzahl von Wörtern zugreift, die jeweils zufällig ausgewählt werden und vom Nutzer erraten werden müssen.
