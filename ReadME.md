@@ -1,7 +1,7 @@
 # Hangman Game
 
-[Macbook-Air-hangman-game-seven-xi.vercel.app-hm0_0u-oyl9d2z.webm](https://github.com/user-attachments/assets/d769ef41-281e-47f1-baa9-9d279bc5e089)
 
+[iPhone-13-PRO-localhost-o_gd1t1j_oa592.webm](https://github.com/user-attachments/assets/cda3257c-ce8e-4ce7-a796-2e535b24eaae)
 
 
 Das Projekt „Hangman Game“ wurde im Rahmen des sechsmonatigen Web-Development-Kurses während des „TypeScript“-Moduls entwickelt. Ziel dieses Projekts war es, meine neu erlernten Fähigkeiten in der Programmiersprache TypeScript zu demonstrieren. Das Spiel umfasst einen Zähler, der die verbleibenden Versuche anzeigt, sowie einen Countdown, der dem Nutzer bzw. der Nutzerin die verbleibende Spielzeit anzeigt. Es können beliebig viele Runden gespielt werden, wobei das Spiel auf ein Array mit einer festgelegten Anzahl von Wörtern zugreift, die jeweils zufällig ausgewählt werden und vom Nutzer erraten werden müssen.
@@ -19,7 +19,7 @@ Das Projekt „Hangman Game“ wurde im Rahmen des sechsmonatigen Web-Developmen
 ## Über das Projekt
 
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%">
-    <img style="object-fit: contain" src="./public/Macbook-Air-hangman-game-seven-xi.vercel.app.png">
+    <img style="object-fit: contain" src="./public/Macbook-Air-localhost.png">
 </div>
 
 Für die Entwicklung dieses Projekts habe ich Visual Studio Code als Entwicklungsumgebung verwendet und die Website unter Einsatz von HTML sowie Tailwind CSS gestaltet. Die Funktionen zum Anzeigen der Buchstaben, des Zählers und des Countdowns habe ich in TypeScript implementiert.
